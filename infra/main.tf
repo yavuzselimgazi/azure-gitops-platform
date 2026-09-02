@@ -1,9 +1,9 @@
 resource "azurerm_resource_group" "rg" {
   name     = "rg-gitops-platform"
-  location = "westeurope"
+  location = var.location
 
   tags = {
-    project     = "azure-gitops-platform"
+    project     = var.project_name
     environment = "portfolio"
     managed_by  = "terraform"
   }
@@ -17,7 +17,7 @@ resource "azurerm_storage_account" "tfstate" {
   account_replication_type = "LRS"
 
   tags = {
-    project     = "azure-gitops-platform"
+    project     = var.project_name
     environment = "portfolio"
     managed_by  = "terraform"
   }
