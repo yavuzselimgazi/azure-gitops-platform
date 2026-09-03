@@ -1,6 +1,6 @@
 image:
   repository: acrgitopsyavuz2026.azurecr.io/my-app
-  tag: v1
+  tag: 2331165ea972d73efc8173c66694a06e0f297f94
   pullPolicy: IfNotPresent
 
 replicaCount: 1
