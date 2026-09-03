@@ -11,7 +11,7 @@ resource "azuread_application_federated_identity_credential" "github" {
   display_name   = "github-federated-credential"
   audiences      = ["api://AzureADTokenExchange"]
   issuer         = "https://token.actions.githubusercontent.com"
-  subject        = "repo:yavuzselimgazi/azure-gitops-platform:ref:refs/heads/main"
+  subject        = "repo:yavuzselimgazi@308671432/azure-gitops-platform@1333438916:ref:refs/heads/main"
 }
 
 resource "azurerm_role_assignment" "github_actions_acr_push" {
