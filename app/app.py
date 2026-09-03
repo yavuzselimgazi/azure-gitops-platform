@@ -9,7 +9,7 @@ class Handler(BaseHTTPRequestHandler):
         else:
             self.send_response(200)
             self.end_headers()
-            message = "Hello from Yavuz's Azure GitOps Platform!"
+            message = "Hello from Yavuz's Azure GitOps Platform! (CI/CD test)"
             self.wfile.write(message.encode())
 
 if __name__ == "__main__":
